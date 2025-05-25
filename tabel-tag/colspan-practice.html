@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>colspan practice</title>
+        <style>
+            table{
+                width: 100%;
+                background-color: black;
+            }
+            td{
+                background-color: lightblue;
+            }
+            .box-1{
+                background-color: lightcoral;
+                height: 200px;
+                text-align: center;
+            }
+            .box-2{
+                background-color: lightseagreen;
+                height: 200px;
+                text-align: center;
+            }
+            .box-3{
+                height: 80px;
+                height: 200px;
+                text-align: center;
+            }
+            .box-4{
+                height: 200px;
+                font-size: 30px;
+                text-align: center;
+                 font-family: cursive;
+            }
+            .box-5{
+                height: 200px;
+                font: size 30px;
+                text-align: center;
+                font-family: cursive;
+            }
+            h1{
+                font-size: 30px;
+                font-family: cursive;
+                font-weight: 700;
+            }
+            h2{
+                font-size: 40px;
+                color: black;
+            }
+            p{
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <!--row one-->
+            <tr class="box-4">
+                <td>Home</td>
+                <td>About</td>
+                <td>Project</td>
+                <td>Contact</td>
+            </tr>
+            <!--row two-->
+            <tr>
+               <td colspan="4" class="box-1">
+                <h1>Wellcome To My Webpage</h1>
+                <span>My Name is <b>Tanmay</b></span>
+                <h2>I am Web Developer</h2>
+               </td>
+            </tr>
+            <!--row three-->
+            <tr>
+                <td colspan="4" class="box-2">
+                    <P> My name is Tanmay pande and Iam a veb a web devloper in Enjoy programming 
+                        I am studing in Mount Carmel Convent School katol in 8th class
+                        and I love with HTML  CSS Javascript .</P> 
+                    
+                </td>
+            </tr>
+            <!--row four-->
+            <td colspan="4" class="box-3">
+                <p><b>Email ID</b>: <b>tanmaypande.ep@gmail.com</b></p>
+                <p><b>Phone No</b>: <b>9175843951</b></p>
+                <p><b>Github</b>: <b>Click Here</b></p>
+                <p><b>Address</b>: <b>Peth Budhwara Near Hanuman Temple</b></p>
+            </td>
+        </tr>
+        <!--row five-->
+        <tr class="box-5">
+            <td>Email ID</td>
+            <td>Phone No</td>
+            <td>Github</td>
+            <td>Address</td>
+        </tr>
+            
+        </table>
+    </body>
+</html>
