@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>table layout 2 html</title>
+        <style>
+            .magic-aera{
+                width: 300px;
+                height: 200px;
+                color: white;
+            }
+            .magic-button{
+                width: 300px;
+                height:25px;
+                background-color: black;
+                color: white;
+                text-align: center;
+            }
+            .magic-box{
+                width: 300px;
+                height: 300px;
+                background-color: rgb(87, 82, 160);
+                border-radius: 10px;
+                margin-left: 10%;
+                margin-right: 10%;
+                display:none;
+            }
+
+            .magic-button:hover+ .magic-box{
+                display: block;
+            }
+            .magic-box-item{
+                width: 80%;
+                height: 200px;
+                background-color: rgb(87, 82, 160);
+                display:none;   
+            }
+        </style>
+    </head>
+    <body>
+        <div class="magic-aera">
+            <div class="magic-button"><b>Hover to Revekl to magic box!</b></div>
+            <div class="magic-box">
+                <h1>Magic Box One</h1>
+                <span><b>Hover To Reveal To Magic Box Two!</b></span>
+                <div class="magic-box-two"></div>
+                <div class="magic-box-item"></div>
+            </div>
+        </div>
+    </body>
+</html>
