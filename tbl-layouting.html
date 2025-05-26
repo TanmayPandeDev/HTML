@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Table layout CSS</title>
+        <style>
+            table{
+                width: 100%;
+            }
+            .heading{
+                width:100% ;
+                height: 80px;
+                font-size: 30px;
+                position: fixed;
+                background-color: lightblue;
+                
+            }
+            .heading-item{
+                width: 415px;
+            }
+            td{
+                width: 500px;
+               height: 80px;
+                border-style:solid ;
+                border-width: 1px;
+                border-color:black;
+                text-align: center;
+                font-family:cursive;
+
+            }
+            .Home{
+               height: 500px;
+               background-color: lightblue;
+            }
+            .Projects{
+                height: 500px;
+                background-color: lightcoral;
+            }
+            .Projects-item{
+                width: 80%;
+                height: 200px;
+                background-color: green;
+                display: none;
+               
+            }
+            .show-box{
+                background-color: black;
+                height: 80px;
+                border-radius: 10px;
+                color: #DDDDDD;
+                font-weight: 800;
+                font-size: 50px;
+                position: static;
+            }
+            .show-box:hover + .Projects-item{
+                display: block;
+            }
+            .About{
+                height: 500px;
+                background-color: lightgreen;
+            }
+            .Contact{
+                height: 500px;
+                background-color: #648DB3;
+            }
+            
+        </style>
+    </head>
+    <body>
+         <table>
+            <!--row one-->
+             <tr class="heading">
+                <td class="heading-item">Home</td>
+                <td class="heading-item show-box"><span class="show-box">Projects</span></td>
+                <td class="heading-item">About</td>
+                <td class="heading-item">Contact</td>
+             </tr>
+             <!--Home section-->
+             <tr class="Home">
+                <td colspan="4"></td>
+             </tr>
+             <!--projects section-->
+             <tr class="Projects">
+                <td colspan="4">
+                    <h1 class="show-box"></h1>                    
+                    <div class="Projects-item"></div>
+                </td>
+             </tr>
+             <!--About section-->
+             <tr class="About">
+                <td colspan="4"></td>
+             </tr>
+             <!-- Contact section-->
+             <tr class="Contact">
+                <td colspan="4"></td>
+             </tr>
+         </table>
+    </body>
+</html>
